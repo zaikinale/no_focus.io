@@ -343,6 +343,7 @@ html {
     color: var(--text-color-p);
   }
   .adviсe {
+    padding: 0;
     margin-bottom: 20px;
   } 
 
