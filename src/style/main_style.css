@@ -305,6 +305,9 @@ html {
   .how > .how_container > .block-row-container > .block-row > .h3 > h3 {
     color: var(--text-color-p);
   }
+  .adviсe {
+    margin-bottom: 20px;
+  } 
   
   
   .gallery_container {
