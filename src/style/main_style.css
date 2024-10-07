@@ -1,12 +1,11 @@
 :root {
-    --background-color: #000028;
-    --background-color-title: #FF0070;
-    --text-color-h1: #DB00FF;
-    --text-color-h2: #FF0070;
-    --text-color-h3: #000028;
-    --text-color-p: #F1B2CE;
-  
-  }
+  --background-color: #000028;
+  --background-color-title: #FF0070;
+  --text-color-h1: #DB00FF;
+  --text-color-h2: #FF0070;
+  --text-color-h3: #000028;
+  --text-color-p: #F1B2CE;
+}
   
 @font-face {
     font-weight: 700;
@@ -19,9 +18,9 @@
     src: url("../fonts/IBMPlexMono-Regular.ttf");
 }
 html {
-    margin: 0;
-    padding: 0;
-  } 
+  margin: 0;
+  padding: 0;
+} 
   body {
     font-family: IBMPlexMono;
     font-weight: 400;
@@ -39,6 +38,19 @@ html {
     padding: 0;
     border: 0;
   }
+  .section_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--background-color);
+  }
+  .flex_container {
+    width: 1024px;
+    height: 100%;
+    box-sizing: border-box;
+
+  }
 
   header {
     display: flex;
@@ -52,59 +64,32 @@ html {
     background-size: cover;
   }
   .header_container {
-    width: 1024px;
-    height: 100%;
     padding: 20px;
-    box-sizing: border-box;
     position: relative;
   }
   .why {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     height: 608px;
-    box-sizing: border-box;
-    background-color: var(--background-color);
     
   }
   .why_container {
     max-width: 1024px;
-    height: 608px;
     padding: 60px 20px 40px 20px;
     box-sizing: border-box;
   }
 
   .cause {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 578px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: var(--background-color);
   }
   .cause_container {
     max-width: 1024px;
-    height: 100%;
     padding: 40px 20px 40px 20px;
-    box-sizing: border-box;
   }
 
   .how {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
     height: 1095px;
-    box-sizing: border-box;
-    background-color: var(--background-color);
   }
   .how_container {
-    max-width: 1024px;
-    height: 100%;
     padding: 40px 20px 40px 20px;
-    box-sizing: border-box;
   }
 
   .gallery {
@@ -118,10 +103,7 @@ html {
     
   }
   .gallery_container {
-    max-width: 1024px;
-    height: 100%;
     padding: 40px 20px 60px 20px;
-    box-sizing: border-box;
   }
 
   footer {
@@ -134,14 +116,11 @@ html {
     background-color: var(--background-color);
   }
   .footer_container {
-    height: 100%;
-    max-width: 1024px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     padding: 20px 20px 20px 20px;
-    box-sizing: border-box;
   }
   
   ul, li {
@@ -189,12 +168,15 @@ html {
 
   }
 
+
+  .corner_main {
+    width: 25px;
+    height: 25px;
+  }
   .corner {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 25px;
-    height: 25px;
     border-top: 1px solid #FF0070;
     border-right: 1px solid #FF0070;
   }
@@ -202,8 +184,6 @@ html {
     position: absolute;
     left: 20px;
     bottom: 20px;
-    width: 25px;
-    height: 25px;
     border-bottom: 1px solid #FF0070;
     border-left: 1px solid #FF0070;
   }
