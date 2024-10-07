@@ -120,7 +120,7 @@ html {
   .gallery_container {
     max-width: 1024px;
     height: 100%;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px 60px 20px;
     box-sizing: border-box;
   }
 
@@ -140,6 +140,8 @@ html {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
   }
   
   ul, li {
@@ -232,7 +234,7 @@ html {
     padding: 0 13px; 
   }
   .zero {
-    width: 52px;
+    width: 62px;
   }
   .bulb {
     display: flex;
@@ -255,9 +257,13 @@ html {
     margin-right: 10px;
   }
   .title-focus {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 273px;
     margin-bottom: 114px;
+    width: 759px;
+    height: 130px;
     position: relative;
     left: -20px;
   
@@ -282,7 +288,7 @@ html {
     width: 100%;
     height: 100%;
   }
-  .titile-block {
+  .title-block {
     display: flex;
     width: 34%;
     flex: 1;
@@ -400,6 +406,7 @@ html {
     align-items: center;
   }
   .title_container > .title-focus {
+    width: 1024px;
     display: flex;
     margin: 0;
     justify-content: center;
