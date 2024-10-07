@@ -32,6 +32,17 @@ html {
     padding: 0;
     background-color: var(--background-color);
   }
+  button {
+    text-decoration: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+
+
+
   header {
     display: flex;
     align-items: center;
@@ -137,12 +148,6 @@ html {
     margin: 0;
     padding: 0;
   }
-  a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-decoration: none;
-  }
   h1 {
     font-weight: 700;
     font-size: 157px;
@@ -198,7 +203,7 @@ html {
     align-items: center;
     flex-shrink: 0;
   }
-  .navigation-link > a {
+  .navigation-link > button {
     color: var(--text-color-h2);
     font-size: 18px;
     font-weight: 400;
