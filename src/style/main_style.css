@@ -179,22 +179,22 @@ html {
 
   }
   
-  .navigathion_container {
+  .navigation_container {
     display: flex;
     justify-content: space-between;
   }
-  .navigathion-conteiner-link {
+  .navigation-container-link {
     display: flex;
     gap: 10px;
   }
-  .navigathion-link {
+  .navigation-link {
     display: inline-flex;
     height: 26px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
   }
-  .navigathion-link > a {
+  .navigation-link > a {
     color: var(--text-color-h2);
     font-size: 18px;
     font-weight: 400;
