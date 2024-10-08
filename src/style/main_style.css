@@ -159,7 +159,7 @@ html {
     font-weight: 400;
     line-height: 23.4px; /* 130% */
   }
-  .h3 {
+  .title-type-3 {
     padding-bottom: 10px;
   }
   .active_link {
@@ -284,7 +284,7 @@ html {
   .block-row:last-child {
     margin-bottom: 0px;
   }
-  .block-row > .h3 > h3 {
+  .block-row > .title-type-3 > h3 {
     color: var(--text-color-h3);
   }
   
@@ -312,14 +312,12 @@ html {
     width: 32%;
   }
   
-  
-  
   .how_container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .how > .how_container > .block-row-container > .block-row > .h3 > h3 {
+  .how > .how_container > .block-row-container > .block-row > .title-type-3 > h3 {
     color: var(--text-color-p);
   }
   .adviсe {
@@ -327,11 +325,9 @@ html {
     margin-bottom: 20px;
   } 
 
-
-  .gallery_container > .h3 {
+  .gallery_container > .title-type-3 {
     padding-bottom: 20px;
   }
-  
   .gallery-container-img {
     height: 100%;
     width: 100%;
