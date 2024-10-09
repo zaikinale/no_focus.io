@@ -167,9 +167,8 @@ html {
   .active_link {
     box-sizing: border-box;
     border: 1px solid #FF0070;
-
   }
-
+  a {}
 
   .corner_main {
     width: 25px;
@@ -208,7 +207,7 @@ html {
     align-items: center;
     flex-shrink: 0;
   }
-  .navigation-link > button {
+  .navigation-link > a > button {
     color: var(--text-color-h2);
     font-size: 18px;
     font-weight: 400;
@@ -409,7 +408,6 @@ html {
     justify-content: center;
     width: 100%;
     height: 984px;
-    background-image: url("../img/cover-image-dark.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -601,12 +599,6 @@ html {
   }
 }
 
-  
-
-
-
-
-
 @media (max-width: 767px) {
   
   .flex_container {
@@ -629,7 +621,6 @@ html {
     justify-content: center;
     width: 100%;
     height: 668px;
-    background-image: url("../img/cover-image-dark.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
