@@ -205,6 +205,18 @@ html {
     align-items: center;
     flex-shrink: 0;
   }
+
+  .navigation-link:focus {
+    border-bottom: 1px solid #ff0070;
+  }
+  .navigation-link:hover {
+    border: 1px solid #FF0070;
+    opacity: 0.5;
+  }
+
+
+
+
   .navigation-link > a > button {
     color: var(--text-color-h2);
     font-size: 18px;

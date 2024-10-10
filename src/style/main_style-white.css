@@ -208,6 +208,17 @@
       align-items: center;
       flex-shrink: 0;
     }
+
+
+    .navigation-link:focus {
+      border-bottom: 1px solid #353430;
+    }
+    .navigation-link:hover {
+        border: 1px solid #353430;
+        opacity: 0.5;
+    }
+
+
     .navigation-link > a > button {
       color: #353430;
       font-size: 18px;
