@@ -21,6 +21,7 @@
   --text-color-paragraf: #F1B2CE;
   --background-color: #fff1f7;
   --background-image: url("../img/cover-image-light.png");
+  --opacity_blub: 0;
 }
 .black-theme {
   --background-color-title: #FF0070;
@@ -31,6 +32,7 @@
   --text-color-paragraf: #F1B2CE;
   --background-color: #000028;
   --background-image: url("../img/cover-image-dark.svg");
+  --opacity_blub: 1;
 }
 html {
   margin: 0;
@@ -226,6 +228,7 @@ p {
   height: 25px;
 }
 .bulb {
+  opacity: var(--opacity_blub);
   display: flex;
   align-items: center;
   gap: 10px;
