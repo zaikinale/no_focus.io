@@ -1,20 +1,5 @@
 :root {
-  --background-color-title: #FF0070;
-  --text-color-h1: #DB00FF;
-  --text-color-h2: #FF0070;
-  --text-color-h3: #000028;
-  --text-color-p: #F1B2CE;
-
-
-
-  --background-color-title: #FF0070;
-  --text-color-title-focus: #DB00FF;
-  --text-color-title-block: #FF0070;
-  --text-color-title-type-3: #000028;
-  --text-color-paragraf: #F1B2CE;
-
   --width-mobile: 355px;
-  --background-color: #000028;
 }
 @font-face {
     font-weight: 700;
@@ -25,6 +10,27 @@
     font-weight: 400;
     font-family: IBMPlexMono;
     src: url("../fonts/IBMPlexMono-Regular.ttf");
+}
+.white-theme {
+  --background-color-title: #ff0070;
+  --text-color-title-focus: #ffc2e6;
+  --text-color-title-block: #353430;
+  --color-link: #353430;
+  --text-color-title-type-3: #353430;
+  --text-color-title: #;
+  --text-color-paragraf: #F1B2CE;
+  --background-color: #fff1f7;
+  --background-image: url("../img/cover-image-light.png");
+}
+.black-theme {
+  --background-color-title: #FF0070;
+  --text-color-title-focus: #DB00FF;
+  --text-color-title-block: #FF0070;
+  --color-link: #FF0070;
+  --text-color-title-type-3: #000028;
+  --text-color-paragraf: #F1B2CE;
+  --background-color: #000028;
+  --background-image: url("../img/cover-image-dark.svg");
 }
 html {
   margin: 0;
@@ -64,7 +70,7 @@ header {
   justify-content: center;
   width: 100%;
   height: 768px;
-  background-image: url("../img/cover-image-dark.svg");
+  background-image: var(--background-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,28 +142,28 @@ h1 {
   font-size: 157px;
   line-height: 0.5em;
   text-shadow: 4px 4px var(--background-color-title);
-  color: var(--text-color-h1);
+  color: var(--text-color-title-focus);
   margin: 0;
   padding: 0;
 }
 h2 {
   font-weight: 700;
   font-size: 18px;
-  color: var(--text-color-h2);
+  color: var(--text-color-title-block);
   margin: 0;
   padding: 0;
 }
 h3 {
   font-weight: 700;
   font-size: 18px;
-  color: var(--text-color-h3);
+  color: var(--text-color-title-type-3);
   background-color: var(--background-color-title);
   margin: 0;
 }
 p {
   margin: 0;
   padding: 0;
-  color: var(--text-color-p);
+  color: var(--text-color-paragraf);
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px; /* 130% */
@@ -173,15 +179,15 @@ p {
   position: absolute;
   top: 20px;
   right: 20px;
-  border-top: 1px solid var(--text-color-h2);
-  border-right: 1px solid var(--text-color-h2);
+  border-top: 1px solid var(--color-link);
+  border-right: 1px solid var(--color-link);
 }
 .corner2 {
   position: absolute;
   left: 20px;
   bottom: 20px;
-  border-bottom: 1px solid var(--text-color-h2);
-  border-left: 1px solid var(--text-color-h2);
+  border-bottom: 1px solid var(--color-link);
+  border-left: 1px solid var(--color-link);
 }
 .navigation_container {
   display: flex;
@@ -194,20 +200,22 @@ p {
 }
 .navigation-link {
   display: inline-flex;
+  box-sizing: border-box;
+  width: 70px;
   height: 26px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 }
 .navigation-link:focus {
-  border-bottom: 1px solid var(--background-color-title);
+  border-bottom: 1px solid var(--color-link);
 }
 .navigation-link:hover {
-  border: 1px solid var(--background-color-title);
+  border: 1px solid var(--color-link);
   opacity: 0.5;
 }
 .navigation-link > button {
-  color: var(--text-color-h2);
+  color: var(--color-link);
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -226,14 +234,14 @@ p {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  color: var(--text-color-h2);
+  color: var(--color-link);
 }
 .bulb-ellips{
   display: block;
   height: 9px;
   width: 9px;
-  background-color: var(--background-color-title);
-  filter: drop-shadow(0px 0px 4px var(--text-color-h2));
+  background-color: var(--color-link);
+  filter: drop-shadow(0px 0px 4px var(--color-link));
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -253,10 +261,10 @@ p {
   margin-left: auto;
   justify-content: end;
   display: block;
-  background-color: var(--text-color-h2);
+  background-color: var(--background-color-title);
 }
 .title-text > p {
-  color: var(--text-color-h3);
+  color: var(--text-color-title-type-3);
 }
 .title-block {
   display: flex;
@@ -275,7 +283,7 @@ p {
   margin-bottom: 0;
 }
 .block-row > .title-type-3 > h3 {
-  color: var(--text-color-h3);
+  color: var(--text-color-title-type-3);
 }
 .title-cause {
   display: inline-block;
