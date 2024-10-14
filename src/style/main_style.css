@@ -38,7 +38,7 @@ html {
   padding: 0;
 } 
 body {
-  font-family: IBMPlexMono;
+  font-family: IBMPlexMono, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3em;
@@ -170,7 +170,7 @@ p {
   line-height: 23.4px; /* 130% */
 }
 .title-type-3 {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .corner_main {
   width: 25px;
@@ -259,14 +259,15 @@ p {
   left: -20px;
 } 
 .title-text {
+  font-weight: 700;
   width: 491px;
   margin-left: auto;
   justify-content: end;
   display: block;
   background-color: var(--background-color-title);
-}
-.title-text > p {
   color: var(--text-color-title-type-3);
+}
+.title-text {
 }
 .title-block {
   display: flex;
@@ -284,7 +285,7 @@ p {
 .block-row:last-child {
   margin-bottom: 0;
 }
-.block-row > .title-type-3 > h3 {
+.block-row > .title-type-3 {
   color: var(--text-color-title-type-3);
 }
 .title-cause {
@@ -303,7 +304,7 @@ p {
 .block-column {
   width: 32%;
 }
-.how > .how_container > .block-row-container > .block-row > .title-type-3 > h3 {
+.how > .how_container > .block-row-container > .block-row > .title-type-3 {
   font-weight: 400;
 }
 .adviсe {
@@ -311,7 +312,7 @@ p {
   margin-bottom: 20px;
 } 
 .gallery_container > .title-type-3 {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .gallery-container-img {
   height: 100%;
@@ -361,8 +362,10 @@ p {
   margin: 0;
   justify-content: center;
   align-items: center;
+  left: 0px;
 
 }
+
 @media (max-width: 1023px) {
   .flex_container {
     width: 768px;
@@ -433,7 +436,7 @@ p {
     height: 99px;
     width: 576.84px;
   }
-  .title-focus > h1 {
+  .title-focus {
     font-size: 120px;
   }
   .title-text {
@@ -547,9 +550,9 @@ p {
     height: 192px;
     left: 0;
   }
-  .title-focus > h1 {
-  font-size: 116px;
-  line-height: 82.5%;
+  .title-focus {
+    font-size: 116px;
+    line-height: 82.5%;
   }
   .title-text {
     width: var(--width-mobile);
