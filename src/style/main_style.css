@@ -267,8 +267,6 @@ p {
   background-color: var(--background-color-title);
   color: var(--text-color-title-type-3);
 }
-.title-text {
-}
 .title-block {
   display: flex;
   width: 34%;
