@@ -1,5 +1,7 @@
 :root {
   --width-mobile: 355px;
+  --img-width-hight: 315px;
+  --width-mobile-container: 375px; 
 }
 @font-face {
     font-weight: 700;
@@ -329,17 +331,17 @@ p {
   grid-area: img__item1;
 }
 .img_item2 {
-  width: 315px;
+  width: var(--img-width-hight);
   height: 595px;
   grid-area: img__item2;
 }
 .img_item3 {
-  width: 315px;
-  height: 315px;
+  width: var(--img-width-hight);
+  height: var(--img-width-hight);
   grid-area: img__item3;
 }
 .img_item4 {
-  width: 315px;
+  width: var(--img-width-hight);
   height: 768px;
   grid-area: img__item4;
 }
@@ -468,8 +470,12 @@ p {
   }
 }
 @media (max-width: 767px) {
+  .padding-block {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   .flex_container {
-    width: 375px;
+    width: var(--width-mobile-container);
     padding: 0 10px;
   }
   .corner {
@@ -484,14 +490,14 @@ p {
     height: 668px;
   }
   .header_container {
-    max-width: 375px;
+    max-width: var(--width-mobile-container);
     padding: 10px;
   }
   .why {
     height: 1014px;
   }
   .why_container {
-    max-width: 375px;
+    max-width: var(--width-mobile-container);
     padding-top: 40px;
     padding-bottom: 25px;
     flex-direction: row;
@@ -500,40 +506,34 @@ p {
     height: 1169px;
   }
   .cause_container {
-    max-width: 375px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    max-width: var(--width-mobile-container);
   }
   .how {
     height: 1787px;
   }
   .how_container {
     flex-direction: row;
-    max-width: 375px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    max-width: var(--width-mobile-container);
   }
   .gallery {
     width: 100%;
     height: 100%;
   }
   .gallery_container {
-    max-width: 375px;
+    max-width: var(--width-mobile-container);
     padding: 25px 10px 40px 10px;
   }
   footer {
     height: 984px;
   }
   .footer_container {
-    max-width: 375px;
+    max-width: var(--width-mobile-container);
     padding-top: 25px;
     padding-bottom: 10px;
   }
-  .title-cause {
+  .title-cause  {
     width: var(--width-mobile);
     height: 47px;
-  }
-  .title-cause > h2 {
     width: var(--width-mobile);
   }
   .navigation_container {
